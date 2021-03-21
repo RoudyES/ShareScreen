@@ -3,6 +3,7 @@ using HelpersLibrary.Helpers;
 using Microsoft.AspNet.SignalR.Client;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -28,7 +29,9 @@ namespace CommunicationLibrary.Communication
 
         private Communicator()
         {
-            _hub = new HubConnection("http://192.168.1.108:7717/livehub");
+            string ip = ConfigurationManager.AppSettings["BroadcasterIP"];
+            string port = ConfigurationManager.AppSettings["BroadcasterPort"];
+            _hub = new HubConnection($"http://{ip}:{port}/livehub");
             _hub.Closed += ConnectionClosed;
             _hub.Reconnecting += Hub_Reconnecting;
 
