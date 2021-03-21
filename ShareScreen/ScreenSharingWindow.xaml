@@ -1,0 +1,18 @@
+﻿<Window x:Class="ShareScreen.ScreenSharingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShareScreen"
+        mc:Ignorable="d"
+        Title="ScreenSharingWindow" Height="450" Width="800" MouseEnter="Window_MouseEnter" MouseLeave="Window_MouseLeave" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
+    <Window.Resources>
+        <!--<local:ImageConverter x:Key="ImageConverter"/>-->
+    </Window.Resources>
+    <Grid>
+        <Image x:Name="ss" Source="{Binding Image}" Stretch="Uniform"
+               MouseMove="ImageHolder_MouseMove" MouseDown="ImageHolder_MouseDown" MouseUp="ImageHolder_MouseUp"/>
+        <!--<Button x:Name="ImageHolder" Width="{Binding ActualWidth, ElementName=ss}" Height="{Binding ActualHeight, ElementName=ss}" Background="Transparent" MouseEnter="ImageHolder_MouseEnter"
+                MouseMove="ImageHolder_MouseMove" MouseDown="ImageHolder_MouseDown" MouseUp="ImageHolder_MouseUp" MouseDoubleClick="ImageHolder_MouseDoubleClick"/>-->
+    </Grid>
+</Window>
