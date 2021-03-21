@@ -13,4 +13,4 @@ A sample UI app is also provided for reference on the required functions.
 
 An example of the application running is provided in the following image:
 The software will import an image from disk and the preferred configuration values have to be filled.
-![alt text](https://github.com/RoudyES/ShareScreen/ShareScreen/Demo.PNG?raw=true)
+![alt text](ShareScreen/Demo.PNG?raw=true)
