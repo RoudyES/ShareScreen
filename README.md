@@ -12,5 +12,4 @@ A sample UI app is also provided for reference on the required functions.
 **Step 4:** To use as a client, write the host's ID and Password then click connect. To use as host just tell the client your credentials.<br/><br/>
 
 An example of the application running is provided in the following image:
-The software will import an image from disk and the preferred configuration values have to be filled.
 ![alt text](ShareScreen/Demo.PNG?raw=true)
